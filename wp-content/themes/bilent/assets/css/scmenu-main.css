@@ -1,0 +1,383 @@
+.nav-menu ul {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.sc-offcanvas-menu .nav-menu ul {
+    -webkit-transition: all .0s ease-in-out;
+    -moz-transition: all .0s ease-in-out;
+    -ms-transition: all .0s ease-in-out;
+    -o-transition: all .0s ease-in-out;
+    transition: all .0s ease-in-out;
+}
+.main-menu {
+    position: relative;
+}
+.main-menu::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.sc-menu {
+   float: left;
+   clear: both;
+   width: 100%;
+   font-size: 0;
+}
+.sc-menu ul,
+.sc-menu li,
+.sc-menu p,
+.sc-menu a,
+.sc-menu div,
+.sc-menu i {
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
+.sc-menu li {
+   display: block;
+   position: relative;
+}
+.sc-menu a {
+   display: block;
+   padding: 16px;
+}
+.sc-menu .row {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.sc-header .menu-area .main-menu .sc-menu ul.nav-menu li {
+  display: inline-block;
+  margin-right: 45px;
+  padding: 0;
+}
+.sc-header .menu-area .main-menu .sc-menu ul.nav-menu li a {
+  transition: all 0.3s ease 0s;
+  font-size: 16px;
+  text-transform: capitalize;
+  height: 96px;
+  line-height: 96px;
+  padding: 0;
+  color: #fff;
+}
+.sc-header .menu-area .main-menu .sc-menu ul.nav-menu li a:hover {
+  color: #4285f4;
+}
+.sc-header .menu-area .main-menu .sc-menu ul.nav-menu li:last-child i {
+  margin: 0;
+}
+
+.sc-menu ul ul {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	background-color: #111111; 
+}
+.sc-menu ul ul.visible, .sc-menu ul .sc-mega-menu ul.visible ul.sub-menu {	
+	display:block;
+   z-index: 110;
+}
+
+.sc-menu li:hover > ul.mega-menu > li > ul {
+    position:relative;
+}
+
+.sc-header .menu-area .main-menu .sc-menu ul.sub-menu {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,.15);
+  -ms-box-shadow:  0 0 20px rgba(0,0,0,.15);
+  -o-box-shadow:  0 0 20px rgba(0,0,0,.15);
+  box-shadow:  0 0 20px rgba(0,0,0,.15);
+  z-index: 99;
+}
+.sc-header .menu-area .main-menu .sc-menu ul.sub-menu li {
+  margin: 0;
+  border: none;
+}
+.sc-header .menu-area .main-menu .sc-menu ul.sub-menu li a {
+  padding: 10px 30px;
+  height: unset;
+  text-transform: capitalize;
+  line-height: unset;
+  color: #0a0a0a;
+  font-weight: 400;
+}
+
+.sc-menu a {
+    color:#bbb;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.sc-menu li i {
+	margin-right:10px;
+	font-size:16px;
+	transform:translate3d(0, 0, 0);    
+}
+.nav-menu .sc-mega-menu > a span:after, .nav-menu > .menu-item-has-children > a span:after {
+    content:"\f107";
+    font-family:FontAwesome;
+    float:right;
+    margin:2px 0 0 5px;
+}
+.sc-menu .sub-menu li a {
+	padding: 10px 14px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  MEGA MENU
+/*-----------------------------------------------------------------------------------*/
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu {
+	position: absolute;
+	left: 0;  
+	background-color: #ffffff;
+	min-width: 700px;
+}
+
+
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .mega-menu-container {
+	float:left;
+	width:100%;
+	position:relative;
+    padding: 0;
+    margin: 0;
+}
+
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .sub-menu {
+    display:block;
+    position:relative;
+	width:auto;
+    padding:0;
+    min-height:initial;
+    box-shadow:none;   
+}
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .sub-menu li, 
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .sub-menu a {
+    width:100%;
+}
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .single-megamenu {
+  width: 33%;
+  float: left;
+}
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .single-megamenu .sub-menu {
+	box-shadow: none;
+	text-align: left;
+}
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .single-megamenu .sub-menu .menu-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 30px;
+  color: #0a0a0a;
+}
+.sc-header .menu-area .main-menu .sc-menu .nav-menu .mega-menu .single-megamenu:hover .sub-menu .menu-title {
+  color: #043d72;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Off Canvas Part CSS
+/*-----------------------------------------------------------------------------------*/
+.expand-btn {
+  float: right;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.expand-btn span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.expand-btn span a {
+  padding: 0;
+}
+.expand-btn span a i:before {
+  font-size: 15px;
+  margin: 0;
+}
+.expand-btn span a.nav-expander i {
+  font-weight: 700;
+}
+.expand-btn span a.nav-expander i:before {
+  font-size: 21px;
+  margin-left: 20px;
+}
+.expand-btn span:last-child {
+  margin: 0;
+}
+.expand-btn .header-btn {
+	padding: 10px 40px;
+	background: #4285f4;
+	color: #fff;
+	display: inline-block;
+	border-radius: 5px;
+	font-weight: 600;
+	font-family: 'Nunito', sans-serif;
+}
+.sc-menu ul ul a {
+    font-size: 15px;
+    text-align: left;
+}
+.expand-btn .header-btn:hover {
+	background: #fff;
+	color: #333333;
+}
+.expand-btn .offcanvas-icon li span {
+	background: #fff;
+	height: 2px;
+	width: 20px;
+	display: block !important;
+	margin: 0 0 4px 0 !important;
+	border-radius: 30px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	list-style: none;
+}
+.expand-btn .offcanvas-icon li span:last-child {
+	margin: 0 !important;
+}
+.expand-btn .offcanvas-icon:hover li span:nth-child(1) {
+	width: 10px;
+}
+.expand-btn .offcanvas-icon:hover li span:nth-child(2) {
+	width: 15px;
+	transform: rotate(180deg);
+}
+/*Off Canvas Menu*/
+.nav-expanded {
+	position: relative;
+}
+.nav-expanded nav {
+    right: 0 !important;
+}
+.off-wrap {	
+	position: absolute;
+	width: 100%;
+	background: #000;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: all 0.5s ease 0s;
+}
+.nav-expanded .off-wrap {
+	opacity: 0.5;
+	z-index: 99;
+}
+
+@media screen and (min-width: 992px) {
+	.sc-menu {
+	    height: auto !important;
+	}
+	.sc-menu li {
+    	display:inline-block;
+	}
+	.nav-menu .sc-mega-menu {
+    	position: static;
+	}
+	.sc-menu ul ul.visible {
+		visibility: hidden;
+    	opacity:0;
+	}
+	.nav-menu .menu-item-has-children > span, 
+	.nav-menu .sc-mega-menu > span {
+		display:none;
+	}
+	.sc-menu-toggle {
+		display:none;
+	}
+	.nav-menu div.sub-menu-close {
+		display:none;
+	}
+	.sc-menu li:active > ul, 
+	.sc-menu li:focus > ul, 
+	.sc-menu li:hover > ul, 
+	.sc-menu li:hover > ul.mega-menu > li > ul, 
+	.sc-menu li:hover ul.mega-menu .sub-menu {		
+		display:block;
+		z-index: 17;	
+	}
+	.sc-menu ul ul li > ul {
+		left: auto;
+		right: 100%;
+	}
+	.sc-menu ul ul ul {
+		top: 0;
+	}	
+	.sc-menu ul ul {
+		width:auto;
+	}
+	.sc-menu ul ul a {
+		width: 260px;	
+	}
+    .nav-menu .mega-menu li div.mega-menu-innner .single-magemenu {
+        width: 25%;
+        float: left;
+        padding: 0 12px;
+    }
+    .sc-header .menu-area.menu-sticky {
+        transition: all 0.3s ease 0s;
+    }
+    .sc-header .menu-area.menu-sticky.sticky {
+		background: #fff;
+		position: fixed;
+		z-index: 999;
+		margin: 0 auto;
+		border: none;
+		padding: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+		-webkit-animation-duration: .5s;
+		animation-duration: .5s;
+		-webkit-animation-name: sticky-animation;
+		animation-name: sticky-animation;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		transition: all 0.3s ease;
+    }
+    .sc-header .menu-area.sticky .main-menu .sc-menu ul li > a {
+      color: #161616;
+    }
+    .sc-header .menu-area.sticky .main-menu .sc-menu ul li.current-menu-item > a {
+      color: #ffa000;
+    }
+    .sc-header .menu-area.sticky .expand-btn .header-btn:hover {
+      background: #161616;
+      color: #fff;
+    }
+	/* Menu Transition*/
+	.sc-menu ul ul {
+		opacity: 0;
+		visibility: hidden;	
+		transform: translateY(-10px);
+		transform: scaleY(0);
+		transform-origin: 0 0 0;
+	}
+
+	.sc-menu li:active > ul, .sc-menu li:focus > ul, .sc-menu li:hover > ul, .sc-menu li:hover > ul.mega-menu > li > ul {    
+		 opacity: 1;
+		 visibility:visible;		
+		 transform: translateY(0px);
+		 transform: scaleY(1);
+	}
+	ul.mega-menu .sub-menu {
+		transform: unset;
+	}
+	.sc-menu li:hover ul.mega-menu .sub-menu {
+		transform: unset;
+		opacity: 1;
+		visibility: visible;
+		transform: scaleY(1);
+	}	
+}
